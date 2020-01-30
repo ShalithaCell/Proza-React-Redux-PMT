@@ -3,7 +3,7 @@ import 'firebase/firestore'
 import 'firebase/auth'
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
+var config  = {
     apiKey: "AIzaSyApolk97Iag5A830yoTd1PyX7fT2adNd34",
     authDomain: "proza-react-redux.firebaseapp.com",
     databaseURL: "https://proza-react-redux.firebaseio.com",
@@ -14,8 +14,7 @@ var firebaseConfig = {
     measurementId: "G-7SXKLNPWG8"
   };
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  firebase.initializeApp(config );
   firebase.firestore().settings({timestampsInSnapshots : true});
 
   export default firebase;
